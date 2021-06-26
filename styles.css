@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+a{
+    color: unset;
+}
+
+header{
+    padding: 15px 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.logo{
+    cursor: pointer;
+    width: 150px;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+header div h1{
+    padding-left: 20px;
+    font-family: "Yellowtail", sans-serif;
+
+}
+.drop{
+    display: none;
+    border-radius: 5px;
+}
+.drop li{
+    width: 100px;
+}
+
+.portfolio:hover .drop{
+    display: block;
+    position: absolute;
+    background:#fff;
+    margin-top: 6px;
+}
+header >ul{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    font-weight: 600;
+}
+header ul li{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+header ul li:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    transition-duration: 0.5s;
+
+}
+.home_main{
+    background-image: url('images/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg');
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 5vw;
+    font-weight: 900;
+    font-family: "Yellowtail", sans-serif;
+}
+.home_main img{
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0px 0px 20px 8px rgb(22, 22, 22);
+    margin-right: 4vw;
+    border-radius: 15px;
+}
+.home_main img:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.heading1{
+    font-family: "Sofia", sans-serif;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    text-decoration: underline;
+    font-weight: 900;
+}
+.home_section{
+    padding: 30px 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.home_section .nabiha,
+.naima,
+.sania,
+.zaibs{
+    margin: 10px;
+    box-shadow: 0px 0px 6px -1px black;
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 400px;
+    height: 470px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+}
+.home_section .nabiha:hover,
+.naima:hover,
+.sania:hover,
+.zaibs:hover{
+    box-shadow: 0px 0px 15px -3px black;
+    transform: scale(1.03);
+    transition-duration: 1s;
+}
+.home_section .painting img{
+    width: 100%;
+    border-radius: 15px;
+    height: 80%;
+}
+
+
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+footer h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    width: 60vw;
+    cursor: pointer;
+}
+footer p{
+    text-align: center;
+}
+
+/* ============================== blog =================================*/
+.blogs_section{
+    margin: 20px 7vw;
+}
+.blog{
+    display: flex;
+    margin: 50px 0;
+}
+
+.blog img{
+    width: 30vw;
+    border-radius: 10px;
+}
+.blog p{
+    margin-left: 40px;
+    font-size: 23px;
+    text-align: justify;
+}
+.left p{
+    margin-right: 40px;
+    margin-left: 0px;
+
+}
+
+.aboutus_section{
+
+}
+.aboutus_section h2{
+    margin: 20px 45px;
+    font-family: "Sofia", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+.aboutus_section p{
+    text-align: justify;
+    font-size: 23px;
+    margin: 20px 45px;
+}
+
+/*=========================================== contact us =========================== */
+.contactus_section{
+    padding: 40px;
+}
+.container{
+    margin: 0 auto;
+    width: 85%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .container .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .content .info{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    position: relative;
+  }
+
+  .content .info .details{
+    margin: 14px;
+    text-align: center;
+  }
+  .content .info .details i{
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+  }
+  .content .info .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content .info .details .text-one,
+  .content .info .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+  }
+  .container .content .form{
+    width: 75%;
+    margin-left: 75px;
+  }
+  .content .form .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+  }
+  .form .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  .form .input-box input,
+  .form .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .form .message-box{
+    min-height: 110px;
+  }
+  .form .input-box textarea{
+    padding-top: 6px;
+  }
+  .form .send_button{
+    display: inline-block;
+    margin-top: 12px auto;
+  }
+  .form .send_button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .send_button input[type="button"]:hover{
+    background: #5029bc;
+  }
+  /* ================================= detail painting =============================== */
+
+  .painting_detail h1{
+      text-align: center;
+      padding: 20px 0;
+    font-family: "Sofia", sans-serif;
+
+  }
+  .back_img{
+      background-image: url(images/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg);
+      height: 70vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .painting_detail p{
+      padding: 20px 45px;
+      text-align: justify;
+  }
+  .painting_detail .info{
+      display: flex;
+      justify-content: space-between;
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      font-size: 25px;
+      align-items: center;
+      font-weight: 700;
+  }
+  .painting_detail .info>svg{
+    background-color: rgb(233, 233, 233);
+    padding: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.painting_detail .info >svg:hover{
+    background-color: rgb(153, 153, 153);
+}
+
+/* ============== naima ============== */
+
+
+.naima_main{
+    background-image: url('images/naima.jpg');
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    color: rgb(255, 68, 68);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 5vw;
+    font-weight: 900;
+    font-family: "Yellowtail", sans-serif;
+}
+.nabiha_main{
+    background-image: url('images/nabiha.jpg');
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    color: rgb(255, 68, 68);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 5vw;
+    font-weight: 900;
+    font-family: "Yellowtail", sans-serif;
+}
+.sania_main{
+    background-image: url('images/sania.jpg');
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    color: rgb(255, 68, 68);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 5vw;
+    font-weight: 900;
+    font-family: "Yellowtail", sans-serif;
+}
+.zaib_main{
+    background-image: url('images/zaibs.jpg');
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    color: rgb(255, 68, 68);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 5vw;
+    font-weight: 900;
+    font-family: "Yellowtail", sans-serif;
+}
+
+.nabiha{
+    background: url('nabiha portfolio/122.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.naima{ background: url('naima portfolio/54.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;}
+.sania{ background: url('Sania portfolio/83.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;}
+.zaibs{ background: url('zaibs portfolio/8.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;}
